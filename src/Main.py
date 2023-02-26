@@ -25,7 +25,7 @@ for imgName in images:
     resizedImage = UpScaling.nearest_neighbour(img, 2)
     end_time = datetime.now()
     print(" === Imagen: ", imgName)
-    print(' ===     Duration of Up-scaling: {}'.format(end_time - start_time))
+    print(' ===     Duration of Up-scaling: {} seconds'.format((end_time - start_time).total_seconds()))
     cv2.imwrite((resizedNearestNeighbor + '/' + imgName), resizedImage)
 
 print(" ")
@@ -38,7 +38,7 @@ for imgName in images:
     resizedImage = UpScaling.bilinear_interpolation(img, 2)
     end_time = datetime.now()
     print(" === Imagen: ", imgName)
-    print(' ===     Duration of Up-scaling: {}'.format(end_time - start_time))
+    print(' ===     Duration of Up-scaling: {} seconds'.format((end_time - start_time).total_seconds()))
     cv2.imwrite((resizedBilinearInterpolation + '/' + imgName), resizedImage)
 
 print("*** All the images are scaling ***")
