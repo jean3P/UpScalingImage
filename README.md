@@ -13,7 +13,7 @@ Two algorithms have been implemented that scale the image by a factor of two:
 ## Tech Stack
  **Programming language:** Python3
 
- **Programming libraries:** OpenCV, Numpy
+ **Programming libraries:** Pillow, Numpy
  
 ## Run Locally
 
