@@ -46,8 +46,8 @@ Bilineal interpolation
 
 | Algorithm              |   300x450   |   500x750    |   1850x2750    |
 |:-----------------------|:-----------:|:------------:|:--------------:|
-| Nearest neighbour      | 0.004112 s  |  0.012792 s  |   0.47334 s    |
-| Bilineal interpolation | 2.686742 s  |  7.576278 s  |  102.537781 s  |
+| Nearest neighbour      | 0.003757 s  |  0.012408 s  |   0.534406 s    |
+| Bilineal interpolation | 3.217833 s  |  8.427347 s  |  100.843575 s  |
 
 ## Author
 - [PEREYRA PRINCIPE Jean Pool](https://github.com/jean3P)
