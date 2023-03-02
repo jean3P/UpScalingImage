@@ -33,3 +33,4 @@ if (originalImages and nearestNeighbourImages):
         image1 = np.array(image1)
         image2 = np.array(image2)
 
+
