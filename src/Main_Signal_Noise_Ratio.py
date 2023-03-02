@@ -32,3 +32,4 @@ if (originalImages and nearestNeighbourImages):
         image2 = pil.open(pathImage2)
         image1 = np.array(image1)
         image2 = np.array(image2)
+
