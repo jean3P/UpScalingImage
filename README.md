@@ -116,10 +116,10 @@ As can be seen in the table the SNR values show that there is still too much noi
 | 1000x1500  | 12.66 dB |
 | 3700x55000 | 14.53 dB |
 
-## Python file
+# Python file
 A new Main_Subtraction.py script has been added, which performs the necessary calculation and displays the statistics.
 
-## Future improvements
+# Future improvements
 The quality of the scaled images could be improved by adding a spatial domain filter or bicubic interpolation could be tried.
 
 
