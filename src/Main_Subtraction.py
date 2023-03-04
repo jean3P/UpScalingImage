@@ -114,7 +114,6 @@ if originalImages and nearestNeighbourImages and bilinealInterpolationImages:
         differenceImage.save(pathSubtractionNormal + '/' + 'bilinealInterpolation/' + originalImages[img])
         image3 = only_subtract_when_image1_is_greater_than_image2(image1, image2)
         print_statistics_nsr(buffer1, buffer2, originalImages[img])
-        # differenceImage.show()
-        # image3.show()
+
         image3.save(pathSubtractionSecond + '/' + 'bilinealInterpolation/' + originalImages[img])
 
