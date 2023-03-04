@@ -65,6 +65,7 @@ In the figure, it can be appreciated that the results obtained using the Nearest
 [![Diff-1.png](https://i.postimg.cc/d1LW2SW6/Diff-1.png)](https://postimg.cc/qhHX0QH6)
 
  **- Subtraction where negative values are equal to 0:** This Figure is the result of equating the negative values to 0 (0 has the colour black) so the pixels that can be seen are the result of subtraction where the pixel values of the original image are greater than those of the scaled image.
+
 [![Diff-2.png](https://i.postimg.cc/63X3RD5J/Diff-2.png)](https://postimg.cc/CZcSprqm)
 
  **- Statistics:** The differences can be seen more clearly, the number of equal pixels does not exceed 10\%, this means that the scaled image has more differences than hits, therefore the Nearest Neighbour, it is true that it has a fast execution time, but it loses a lot of precision.
@@ -94,6 +95,7 @@ It can be clearly seen that there is a low SNR value for all images, which means
 
 ### Visually
 It can be seen in the figure that there is undesirable smoothing in the details, and it is irregular.
+
 [![V-2.png](https://i.postimg.cc/PJYX3y3s/V-2.png)](https://postimg.cc/5Q9WjBWn)
 
 ### Subtraction
