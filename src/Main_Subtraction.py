@@ -111,3 +111,4 @@ if originalImages and nearestNeighbourImages and bilinealInterpolationImages:
         print_statistics_nsr(buffer1, buffer2, originalImages[img])
         differenceImage.show()
         image3.show()
+
