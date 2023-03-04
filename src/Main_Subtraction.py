@@ -8,7 +8,8 @@ import numpy as np
 pathOriginalSize = '../resources/OriginalSize'
 pathNearestNeighbour = '../resources/nearestNeighbour'
 pathBilinearInterpolation = '../resources/bilinearInterpolation'
-
+pathSubtractionNormal = '../resources/subtraction/normal'
+pathSubtractionSecond = '../resources/subtraction/second'
 
 def statistics_image2_greater_than_image1(image, image2):
     list = np.greater(image2, image)
@@ -78,6 +79,7 @@ originalImages = os.listdir(pathOriginalSize)
 nearestNeighbourImages = sorted(os.listdir(pathNearestNeighbour))
 bilinealInterpolationImages = sorted(os.listdir(pathBilinearInterpolation))
 
+
 if originalImages and nearestNeighbourImages and bilinealInterpolationImages:
     print(" ==== Nearest Neighbour ==== ")
     for img in range(len(originalImages)):
@@ -91,10 +93,12 @@ if originalImages and nearestNeighbourImages and bilinealInterpolationImages:
         buffer3 = normal_subtract(buffer1, buffer2)
         print_statistics(buffer1, buffer2)
         differenceImage = Image.fromarray(buffer3)
+        differenceImage.save(pathSubtractionNormal + '/' + originalImages[img])
         image3 = only_subtract_when_image1_is_greater_than_image2(image1, image2)
         print_statistics_nsr(buffer1, buffer2, originalImages[img])
-        differenceImage.show()
-        image3.show()
+        # differenceImage.show()
+        # image3.show()
+        image3.save(pathSubtractionSecond + '/' + originalImages[img])
 
     print(" ==== Bilineal Interpolation ==== ")
     for img in range(len(originalImages)):
@@ -107,8 +111,10 @@ if originalImages and nearestNeighbourImages and bilinealInterpolationImages:
         buffer3 = normal_subtract(buffer1, buffer2)
         print_statistics(buffer1, buffer2)
         differenceImage = Image.fromarray(buffer3)
+        differenceImage.save(pathSubtractionNormal + '/' + originalImages[img])
         image3 = only_subtract_when_image1_is_greater_than_image2(image1, image2)
         print_statistics_nsr(buffer1, buffer2, originalImages[img])
-        differenceImage.show()
-        image3.show()
+        # differenceImage.show()
+        # image3.show()
+        image3.save(pathSubtractionSecond + '/' + originalImages[img])
 
