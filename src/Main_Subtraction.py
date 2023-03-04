@@ -93,12 +93,12 @@ if originalImages and nearestNeighbourImages and bilinealInterpolationImages:
         buffer3 = normal_subtract(buffer1, buffer2)
         print_statistics(buffer1, buffer2)
         differenceImage = Image.fromarray(buffer3)
-        differenceImage.save(pathSubtractionNormal + '/' + originalImages[img])
+        differenceImage.save(pathSubtractionNormal + '/' + 'nearestNeighbour/' + originalImages[img])
         image3 = only_subtract_when_image1_is_greater_than_image2(image1, image2)
         print_statistics_nsr(buffer1, buffer2, originalImages[img])
         # differenceImage.show()
         # image3.show()
-        image3.save(pathSubtractionSecond + '/' + originalImages[img])
+        image3.save(pathSubtractionSecond + '/' + 'nearestNeighbour/' + originalImages[img])
 
     print(" ==== Bilineal Interpolation ==== ")
     for img in range(len(originalImages)):
@@ -111,10 +111,10 @@ if originalImages and nearestNeighbourImages and bilinealInterpolationImages:
         buffer3 = normal_subtract(buffer1, buffer2)
         print_statistics(buffer1, buffer2)
         differenceImage = Image.fromarray(buffer3)
-        differenceImage.save(pathSubtractionNormal + '/' + originalImages[img])
+        differenceImage.save(pathSubtractionNormal + '/' + 'bilinealInterpolation/' + originalImages[img])
         image3 = only_subtract_when_image1_is_greater_than_image2(image1, image2)
         print_statistics_nsr(buffer1, buffer2, originalImages[img])
         # differenceImage.show()
         # image3.show()
-        image3.save(pathSubtractionSecond + '/' + originalImages[img])
+        image3.save(pathSubtractionSecond + '/' + 'bilinealInterpolation/' + originalImages[img])
 
